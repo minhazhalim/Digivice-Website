@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@100;200;300;400;500;600;800;900&display=swap);
+:root {
+     --primary:#F0FDFD;
+     --navigation:#C9F3F4;
+     --highlights:#161616;
+     --secondary:#87DAE8;
+}
+body {
+     font-family: 'Orbitron',sans-serif;
+     background-color: var(--primary);
+     margin: 0px auto;
+}
+.navbar {
+     background-color: var(--navigation);
+     position: sticky;
+}
+h1 {
+     color: var(--highlights);
+     font-weight: 700;
+}
+a:hover {
+     opacity: 80%;
+}
+#search {
+     background-color: var(--primary);
+}
+.container {
+     margin-top: 100px;
+}
+.loading-message {
+     display: none;
+}
+.form-group {
+     display: inline-block;
+}
+.grid .list-group {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-gap: 15px;
+     color: var(--highlights);
+}
+.modal-content {
+     background-color: transparent;
+     border: none;
+}
+.modal-body {
+     background-color:#fff;
+     border-radius: 18%;
+}
+.digimon-name {
+     color: var(--highlights);
+     font-weight: 700;
+}
+.digimon-level {
+     font-weight: 400;
+}
+@media only screen and (max-width:768px){
+     .grid .list-group {
+          grid-template-columns: 1fr 1fr;
+     }
+}
+@media only screen and (max-width:480px){
+     .grid .list-group {
+          grid-template-columns: 1fr;
+     }
+}
+@media (min-width:275px) and (max-width:800px){
+     main {
+          padding-top: 30px;
+     }
+     .modal {
+          max-width: 90%;
+          text-align: center;
+          padding: 5%;
+     }
+     .custom-navbar {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-bottom: auto;
+     }
+     .form-group {
+          margin-right: 15px;
+     }
+     h1 {
+          margin: 0px;
+          padding: 0px;
+          font-size: 18px;
+     }
+     #searchForm {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          max-width: 100%;
+          margin: 0% auto;
+          padding: 0%;
+     }
+     #searchButton {
+          margin-right: 15px;
+          margin-left: auto;
+          height: 30%;
+     }
+     .digimon-button {
+          max-width: 80%;
+          text-align: center;
+          margin: 0% auto;
+     }
+}

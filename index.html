@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>Digivice Website</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
+     <script src="script.js" defer></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+     <header class="fixed-top">
+          <nav class="navbar custom-navbar">
+               <a href="index.html" class="navbar-brand"><h1>digivice</h1></a>
+               <form id="searchForm">
+                    <div class="form-group mt-3 fx-auto"><input type="text" class="form-control" id="search" placeholder="enter digimon name"></div>
+                    <button type="button" class="btn digimon-button" id="searchButton">search</button>
+               </form>
+          </nav>
+     </header>
+     <main class="row mt-2 mb-3">
+          <div class="container grid">
+               <ul class="list-group" id="digimonList"></ul>
+          </div>
+     </main>
+     <div class="modal fade" id="digimonModal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content text-center">
+                    <div class="modal-body">
+                         <img src="" alt="Digimon Image" class="img-fluid" id="digimonImage">
+                         <h4 class="digimon-name" id="digimonName"></h4>
+                         <p class="digimon-level" id="digimonLevel"></p>
+                    </div>
+               </div>
+          </div>
+     </div>
+</body>
+</html>
